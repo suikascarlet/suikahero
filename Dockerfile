@@ -18,7 +18,6 @@ ADD v2ray.sh /v2ray.sh
 RUN chmod +x /v2ray.sh
 
 ENV WSPATH
-ENV WSPATH
-
 ENV UUID
-CMD /v2ray.s
+
+CMD /v2ray.sh
