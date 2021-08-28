@@ -1,0 +1,9 @@
+root * /usr/share/caddy
+file_server
+
+@websockets_heroku {
+header Connection *Upgrade*
+header Upgrade    websocket
+path $WSPATH
+}
+reverse_proxy @websockets_heroku 127.0.0.1:10086
